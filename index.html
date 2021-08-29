@@ -35,7 +35,7 @@
 						</div>
 						<nav>
 							<ul>
-								<li style="font-weight: bold;" ><a href="#goals">Services</a></li>
+								<li style="font-weight: bold;" ><a href="#member">Be a member</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
@@ -45,31 +45,44 @@
 					<div id="main">
 
 						<!-- Goals -->
-							<article id="goals">
-								<h2 class="major">Services</h2>
+							<article id="member">
+								<h2 class="major">Be a member</h2>
 
-								<h3>Education content</h3>
-								<ul>
-								<li>Incident Response Competition
-								</li>
-								<li>Penetration Testing Competition
-								</li>
-								<li>Security Operation Center Environment CTF-Style
-								</li>
-								</ul>
+								<form
+									action="https://formspree.io/f/xdoyyorq"
+									method="POST"
+									>
+									<label>
+										Name: <input type="text" name="name" required></input>
+									</label>
+									<label>
+										Email: <input type="email" name="_replyto" required ></input>
+									</label>
 
-								<h3>Training workshops</h3>
-								<ul>
-								  <li>Including Fundamentals security concepts as well as advanced topics
-								  </li>
-								  <li>Provide Certifications
-								  </li>
-								</ul>
 
-								<h3>Cooperative programs</h3>
-								<ul>
-								  <li>Cooperative programs with international universities and colleges</li>
-								</ul>
+									<label>
+									<select name="profession" required>
+										<option value="Beginner">Beginner</option>
+										<option value="Penetration Testing">Penetration Testing</option>
+										<option value="Incident Response">Incident Response</option>
+										<option value="Digital Forensics">Digital Forensics</option>
+										<option value="Cloud Security">Cloud Security</option>
+										<option value="iOS Mobile Security">iOS Mobile Security</option>
+										<option value="Android Mobile Security">Android Mobile Security</option>
+										<option value="Physical Security">Physical Security</option>
+										<option value="Windows Internals">Windows Internals</option>
+										<option value="Linux Internals">Linux Internals</option>
+										<option value="Other">Other</option>
+									</select>
+									</label>
+
+									<!-- <label>
+										GitHub: <input type="text" name="GitHub" placeholder="@SI-RBG" required ></input>
+									</label> -->
+
+									<!-- your other form fields go here -->
+									<button type="submit">Send</button>
+									</form>
 
 							</article>
 					</div>
@@ -79,7 +92,7 @@
 									<li><a href="https://twitter.com/Tigers_Sec_News" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 									<!-- <li><a href="#" class="icon brands fa-discord"><span class="label">Facebook</span></a></li> -->
 									<!-- <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
-									<li><a href="https://github.com/SI-RBG/" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									<!-- <li><a href="https://github.com/SI-RBG/" class="icon brands fa-github"><span class="label">GitHub</span></a></li> -->
 								</ul>
 					</footer>
 			</div>
