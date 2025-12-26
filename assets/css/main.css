@@ -1350,6 +1350,7 @@ input, select, textarea {
 			#header nav ul li {
 				padding-left: 0;
 				border-left: solid 1px #ffffff;
+				position: relative;
 			}
 
 				#header nav ul li:first-child {
@@ -1375,6 +1376,61 @@ input, select, textarea {
 					#header nav ul li a:active {
 						background-color: rgba(255, 255, 255, 0.175);
 					}
+
+				#header nav ul li.dropdown .dropdown-menu {
+					display: none;
+					position: absolute;
+					top: 100%;
+					left: 0;
+					background: #1b1f22;
+					border: solid 1px #ffffff;
+					border-radius: 4px;
+					min-width: 20rem;
+					max-width: 30rem;
+					max-height: 80vh;
+					overflow-y: auto;
+					z-index: 1000;
+					margin-top: 1px;
+					padding: 0.5rem 0;
+					list-style: none;
+				}
+
+					#header nav ul li.dropdown:hover .dropdown-menu {
+						display: block;
+					}
+
+					#header nav ul li.dropdown .dropdown-menu li {
+						border-left: 0;
+						border-top: solid 1px #ffffff;
+					}
+
+						#header nav ul li.dropdown .dropdown-menu li:first-child {
+							border-top: 0;
+						}
+
+						#header nav ul li.dropdown .dropdown-menu li a {
+							min-width: 0;
+							height: auto;
+							line-height: 1.75;
+							padding: 0.5rem 1.25rem;
+							text-transform: none;
+							letter-spacing: normal;
+							font-size: 0.75rem;
+							white-space: normal;
+							text-align: left;
+						}
+
+						#header nav ul li.dropdown .dropdown-menu li strong {
+							display: block;
+							padding: 0.75rem 1.25rem 0.5rem;
+							font-weight: bold;
+							text-transform: uppercase;
+							letter-spacing: 0.2rem;
+							font-size: 0.7rem;
+							color: #ffffff;
+							border-bottom: solid 1px #ffffff;
+							margin-bottom: 0.25rem;
+						}
 
 		#header nav.use-middle:after {
 			/* content: ''; */

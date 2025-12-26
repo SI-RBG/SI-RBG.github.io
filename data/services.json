@@ -1,0 +1,133 @@
+{
+  "offsec": {
+    "services": [
+      {
+        "id": "penetration-testing",
+        "title": "Penetration Testing",
+        "shortDesc": "Web, Mobile, API, Network, Cloud",
+        "description": "Our comprehensive penetration testing services identify vulnerabilities across your web applications, mobile apps, APIs, network infrastructure, and cloud environments. Our certified ethical hackers simulate real-world attacks to uncover security weaknesses before malicious actors can exploit them, providing detailed reports with actionable remediation recommendations."
+      },
+      {
+        "id": "purple-team",
+        "title": "Purple Team Exercises",
+        "shortDesc": "Offense + Defense collaboration",
+        "description": "Purple team exercises combine offensive and defensive security teams to test and improve your security controls collaboratively. Our exercises ensure that your detection and response capabilities are effective against real attack techniques, fostering better collaboration between security teams and enhancing overall security posture."
+      },
+      {
+        "id": "attack-surface",
+        "title": "Attack Surface Management",
+        "shortDesc": "External, Digital Footprint",
+        "description": "We help you identify and manage your external attack surface and digital footprint. Our service includes continuous monitoring of your internet-facing assets, identification of exposed services, and recommendations to reduce your attack surface and minimize the risk of unauthorized access."
+      },
+      {
+        "id": "social-engineering",
+        "title": "Social Engineering (Phishing)",
+        "shortDesc": "Phishing assessments",
+        "description": "Our social engineering assessments test your organization's human security controls through simulated phishing campaigns and other social engineering techniques. We help identify vulnerabilities in employee awareness and provide training to strengthen your human firewall against social engineering attacks."
+      },
+      {
+        "id": "wireless-security",
+        "title": "Wireless Security Testing",
+        "shortDesc": "Wi-Fi & Bluetooth security",
+        "description": "Our wireless security testing evaluates the security of your Wi-Fi networks, Bluetooth implementations, and other wireless technologies. We identify misconfigurations, weak encryption, and other vulnerabilities that could allow unauthorized access to your network infrastructure."
+      }
+    ]
+  },
+  "defsec": {
+    "services": [
+      {
+        "id": "incident-response",
+        "title": "Incident Response",
+        "shortDesc": "Digital Forensics Retainer",
+        "description": "Our DFIR retainer service provides your organization with immediate access to expert incident responders and digital forensics specialists. When a security incident occurs, we're ready to assist with containment, investigation, evidence collection, and recovery to minimize business impact and ensure proper documentation for legal and regulatory requirements."
+      },
+      {
+        "id": "compromise-assessment",
+        "title": "Compromise Assessment",
+        "shortDesc": "Identify security breaches",
+        "description": "A compromise assessment helps determine if your systems have been breached by analyzing indicators of compromise (IOCs), network traffic patterns, and system artifacts. Our experts use advanced techniques to detect persistent threats and provide recommendations to improve your security posture."
+      },
+      {
+        "id": "malware-analysis",
+        "title": "Malware Analysis",
+        "shortDesc": "Deep technical analysis",
+        "description": "Our malware analysis service provides deep technical analysis of malicious software to understand its behavior, capabilities, and impact. We deliver actionable intelligence to help you improve detection capabilities, understand attack vectors, and strengthen your defenses against similar threats."
+      },
+      {
+        "id": "dark-web-monitoring",
+        "title": "Dark Web & Threat Monitoring",
+        "shortDesc": "Threat intelligence services",
+        "description": "We monitor dark web forums, marketplaces, and other underground channels for mentions of your organization, stolen credentials, or planned attacks. Our threat intelligence services provide early warning of potential threats and help you proactively protect against emerging risks."
+      },
+      {
+        "id": "threat-hunting",
+        "title": "Threat Hunting",
+        "shortDesc": "Proactive threat detection",
+        "description": "Our proactive threat hunting services actively search for advanced persistent threats and suspicious activities within your network that may evade traditional security controls. Using hypothesis-driven investigations and advanced analytics, we help you identify and neutralize threats before they cause significant damage."
+      },
+      {
+        "id": "detection-engineering",
+        "title": "Detection Engineering",
+        "shortDesc": "Build & optimize detection rules",
+        "description": "We help you build and optimize detection rules and analytics to identify security threats effectively. Our detection engineering service includes developing custom detection logic, tuning existing rules, and implementing behavioral analytics to improve your security monitoring capabilities."
+      },
+      {
+        "id": "siem-usecase",
+        "title": "Log & SIEM Use-Case Development",
+        "shortDesc": "Log & SIEM optimization",
+        "description": "Our SIEM use-case development service helps you maximize the value of your security information and event management (SIEM) platform. We design and implement detection use cases tailored to your environment, ensuring optimal log collection, correlation, and alerting for security-relevant events."
+      },
+      {
+        "id": "ransomware-readiness",
+        "title": "Ransomware Assessment & Response",
+        "shortDesc": "Assessment & Response",
+        "description": "Our comprehensive ransomware readiness assessment evaluates your organization's ability to prevent, detect, and respond to ransomware attacks. We provide recommendations for backup strategies, network segmentation, and response procedures, and stand ready to assist if an attack occurs."
+      },
+      {
+        "id": "ddos-assessment",
+        "title": "DDoS Assessment",
+        "shortDesc": "Prepare for DDoS attacks",
+        "description": "We help you prepare for and respond to distributed denial-of-service (DDoS) attacks through risk assessments, mitigation strategy development, and incident response planning. Our service includes testing your defenses and providing recommendations to ensure business continuity during attacks."
+      }
+    ]
+  },
+  "training": {
+    "services": [
+      {
+        "id": "blue-team-training",
+        "title": "Blue Team Training (Riyadh only)",
+        "shortDesc": "Defensive security (Riyadh only)",
+        "description": "Our Blue Team training programs in Riyadh focus on defensive security operations, including threat detection, incident response, security monitoring, and security operations center (SOC) best practices. We provide hands-on training to help your security team effectively defend against cyber threats."
+      },
+      {
+        "id": "red-team-training",
+        "title": "Red Team Training (Riyadh only)",
+        "shortDesc": "Offensive security (Riyadh only)",
+        "description": "Our Red Team training programs in Riyadh teach offensive security techniques and ethical hacking skills. Participants learn penetration testing methodologies, exploitation techniques, and post-exploitation tactics to understand attacker perspectives and improve defensive strategies."
+      },
+      {
+        "id": "tabletop-exercises",
+        "title": "Incident Response Tabletop Exercises",
+        "shortDesc": "Incident Response training",
+        "description": "Our tabletop exercises simulate security incidents in a controlled environment, allowing your team to practice response procedures without the pressure of a real attack. We facilitate exercises tailored to your organization's specific threats and help identify gaps in your incident response plans."
+      },
+      {
+        "id": "secure-coding",
+        "title": "Secure Coding Training",
+        "shortDesc": "Secure development practices",
+        "description": "Our secure coding training helps developers write secure applications by teaching common vulnerabilities, secure coding practices, and secure software development lifecycle (SDLC) principles. We provide hands-on exercises and real-world examples to build security awareness and skills within your development team."
+      }
+    ]
+  },
+  "products": {
+    "items": [
+      {
+        "id": "detection-engine",
+        "title": "Detection Engine",
+        "shortDesc": "Advanced threat detection capabilities",
+        "description": "Our advanced detection engine provides cutting-edge threat detection capabilities to identify and respond to security incidents in real-time. This powerful tool leverages machine learning and behavioral analytics to detect anomalies, malicious activities, and potential security threats across your entire infrastructure."
+      }
+    ]
+  }
+}
+
