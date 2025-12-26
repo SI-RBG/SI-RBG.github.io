@@ -30,6 +30,18 @@
         "title": "Wireless Security Testing",
         "shortDesc": "Wi-Fi & Bluetooth security",
         "description": "Our wireless security testing evaluates the security of your Wi-Fi networks, Bluetooth implementations, and other wireless technologies. We identify misconfigurations, weak encryption, and other vulnerabilities that could allow unauthorized access to your network infrastructure."
+      },
+      {
+        "id": "ransomware-readiness",
+        "title": "Ransomware Assessment",
+        "shortDesc": "Assessment & Response",
+        "description": "Our comprehensive ransomware readiness assessment evaluates your organization's ability to prevent, detect, and respond to ransomware attacks. We provide recommendations for backup strategies, network segmentation, and response procedures, and stand ready to assist if an attack occurs."
+      },
+      {
+        "id": "ddos-assessment",
+        "title": "DDoS Assessment",
+        "shortDesc": "Prepare for DDoS attacks",
+        "description": "We help you prepare for and respond to distributed denial-of-service (DDoS) attacks through risk assessments, mitigation strategy development, and incident response planning. Our service includes testing your defenses and providing recommendations to ensure business continuity during attacks."
       }
     ]
   },
@@ -64,30 +76,6 @@
         "title": "Threat Hunting",
         "shortDesc": "Proactive threat detection",
         "description": "Our proactive threat hunting services actively search for advanced persistent threats and suspicious activities within your network that may evade traditional security controls. Using hypothesis-driven investigations and advanced analytics, we help you identify and neutralize threats before they cause significant damage."
-      },
-      {
-        "id": "detection-engineering",
-        "title": "Detection Engineering",
-        "shortDesc": "Build & optimize detection rules",
-        "description": "We help you build and optimize detection rules and analytics to identify security threats effectively. Our detection engineering service includes developing custom detection logic, tuning existing rules, and implementing behavioral analytics to improve your security monitoring capabilities."
-      },
-      {
-        "id": "siem-usecase",
-        "title": "Log & SIEM Use-Case Development",
-        "shortDesc": "Log & SIEM optimization",
-        "description": "Our SIEM use-case development service helps you maximize the value of your security information and event management (SIEM) platform. We design and implement detection use cases tailored to your environment, ensuring optimal log collection, correlation, and alerting for security-relevant events."
-      },
-      {
-        "id": "ransomware-readiness",
-        "title": "Ransomware Assessment & Response",
-        "shortDesc": "Assessment & Response",
-        "description": "Our comprehensive ransomware readiness assessment evaluates your organization's ability to prevent, detect, and respond to ransomware attacks. We provide recommendations for backup strategies, network segmentation, and response procedures, and stand ready to assist if an attack occurs."
-      },
-      {
-        "id": "ddos-assessment",
-        "title": "DDoS Assessment",
-        "shortDesc": "Prepare for DDoS attacks",
-        "description": "We help you prepare for and respond to distributed denial-of-service (DDoS) attacks through risk assessments, mitigation strategy development, and incident response planning. Our service includes testing your defenses and providing recommendations to ensure business continuity during attacks."
       }
     ]
   },
