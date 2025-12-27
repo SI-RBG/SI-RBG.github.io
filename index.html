@@ -37,11 +37,13 @@
 			
 			.services-grid {
 				display: grid;
-				grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+				grid-template-columns: repeat(auto-fill, minmax(180px, 200px));
 				gap: 1rem;
 				padding: 1rem;
 				max-width: 1200px;
 				margin: 0 auto;
+				justify-content: center;
+				justify-items: stretch;
 			}
 			
 			.service-card {
@@ -56,6 +58,7 @@
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
+				align-items: center;
 			}
 			
 			.service-card:hover {
@@ -69,6 +72,7 @@
 				text-transform: uppercase;
 				letter-spacing: 0.1rem;
 				color: #ffffff;
+				text-align: center;
 			}
 			
 			.service-card p {
@@ -76,6 +80,7 @@
 				font-size: 0.8rem;
 				line-height: 1.4;
 				color: rgba(255, 255, 255, 0.8);
+				text-align: center;
 			}
 			
 			
