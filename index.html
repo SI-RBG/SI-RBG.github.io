@@ -1,621 +1,388 @@
-<!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Blue Armors</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-			#main-content {
-				overflow: visible !important;
-				max-height: none !important;
-				transition: opacity 0.25s ease-out;
-			}
-			
-			#main-content.fade-out {
-				opacity: 0;
-			}
-			
-			#main-content.fade-in {
-				opacity: 1;
-			}
-			
-			/* Ensure all nav items have borders except the first */
-			#header nav ul li {
-				border-left: solid 1px #ffffff !important;
-			}
-			
-			#header nav ul li:first-child {
-				border-left: 0 !important;
-			}
-			
-			.services-grid {
-				display: grid;
-				grid-template-columns: repeat(auto-fill, minmax(180px, 200px));
-				gap: 1rem;
-				padding: 1rem;
-				max-width: 1200px;
-				margin: 0 auto;
-				justify-content: center;
-				justify-items: stretch;
-			}
-			
-			.service-card {
-				border: solid 1px #ffffff;
-				border-radius: 4px;
-				padding: 1rem;
-				text-align: center;
-				cursor: pointer;
-				transition: background-color 0.3s ease, transform 0.2s ease;
-				background-color: rgba(255, 255, 255, 0.05);
-				min-height: 120px;
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				align-items: center;
-			}
-			
-			.service-card:hover {
-				background-color: rgba(255, 255, 255, 0.1);
-				transform: translateY(-5px);
-			}
-			
-			.service-card h3 {
-				margin: 0 0 0.5rem 0;
-				font-size: 0.95rem;
-				text-transform: uppercase;
-				letter-spacing: 0.1rem;
-				color: #ffffff;
-				text-align: center;
-			}
-			
-			.service-card p {
-				margin: 0;
-				font-size: 0.8rem;
-				line-height: 1.4;
-				color: rgba(255, 255, 255, 0.8);
-				text-align: center;
-			}
-			
-			
-			@media screen and (max-width: 736px) {
-				.services-grid {
-					grid-template-columns: 1fr;
-					gap: 1rem;
-					padding: 0.75rem;
-				}
-			}
-		</style>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Blue Armors</title>
+	<meta name="description" content="Blue Armors is a leading cybersecurity firm specializing in comprehensive security solutions and expert consulting services." />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="assets/css/site.css" />
+</head>
+<body>
+	<a class="skip-link" href="#main">Skip to content</a>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+	<header class="site-nav" id="site-nav">
+		<div class="site-nav__inner">
+			<a class="brand" href="/">
+				<img src="images/RGB_logo_small.svg" alt="" width="32" height="46" />
+				<span>Blue Armors</span>
+			</a>
+			<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+				<span></span>
+			</button>
+			<ul class="nav-links" id="primary-nav">
+				<li><a href="#home">Home Page</a></li>
+				<li><a href="#services" data-category="offsec">Offsec</a></li>
+				<li><a href="#services" data-category="defsec">Defsec</a></li>
+				<li><a href="#services" data-category="training">Training</a></li>
+				<li><a href="#products">Products</a></li>
+				<li><a href="#contact">Contact Us</a></li>
+			</ul>
+		</div>
+	</header>
 
-				<!-- Header -->
-					<header id="header">
-<!--						<div class="logo">-->
-<!--							<span class="icon fa-gem"></span>-->
-<!--						</div>-->
+	<main id="main">
+		<section class="hero" id="home" aria-label="Blue Armors">
+			<div class="hero__media" role="img" aria-label="Blue Armors visual identity"></div>
+			<div class="hero__grain"></div>
+			<div class="hero__content">
+				<h1 class="hero__brand">Blue Armors</h1>
+				<p class="hero__lede">
+					Blue Armors is a leading cybersecurity firm specializing in comprehensive security solutions and expert consulting services.
+				</p>
+				<div class="hero__actions">
+					<a class="btn btn--primary" href="#contact">Contact Us</a>
+					<a class="btn btn--ghost" href="#services">Explore services</a>
+				</div>
+			</div>
+		</section>
 
-						
-						<nav>
-							<ul>
-								<li><a href="/"><pre>Home Page</pre></a></li>
-								<li><a href="javascript:void(0)" id="offsec-btn"><pre>Offsec</pre></a></li>
-								<li><a href="javascript:void(0)" id="defsec-btn"><pre>Defsec</pre></a></li>
-								<li><a href="javascript:void(0)" id="training-btn"><pre>Training</pre></a></li>
-								<li><a href="javascript:void(0)" id="products-btn"><pre>Products</pre></a></li>
-								<li><a href="#contact"><pre>Contact Us</pre></a></li>
-							</ul>
-						</nav>
+		<section class="section section--paper" id="about" aria-labelledby="about-title">
+			<div class="section__inner reveal">
+				<header class="section__header">
+					<span class="section__eyebrow">About</span>
+					<h2 class="section__title" id="about-title">Blue Armors</h2>
+				</header>
+				<div class="about-copy">
+					<p>
+						Blue Armors is a leading cybersecurity firm specializing in comprehensive security solutions and expert consulting services. We are a team of seasoned cybersecurity professionals dedicated to protecting organizations from evolving cyber threats through proactive security measures, strategic assessments, and cutting-edge defensive technologies.
+					</p>
+					<p>
+						Our firm offers a wide range of professional cybersecurity services including offensive security assessments, defensive security operations, advisory and assurance services, and specialized training programs. With expertise spanning penetration testing, incident response, threat hunting, security architecture, compliance readiness, and more, we provide tailored solutions to help organizations strengthen their security posture and effectively mitigate risks in today's complex threat landscape.
+					</p>
+				</div>
+			</div>
+		</section>
 
+		<section class="section section--tint" id="services" aria-labelledby="services-title">
+			<div class="section__inner reveal">
+				<header class="section__header">
+					<span class="section__eyebrow">Services</span>
+					<h2 class="section__title" id="services-title">Services</h2>
+					<p class="section__intro" id="services-intro">Identify weaknesses by simulating real-world attacks</p>
+				</header>
 
-						<div class="content">
-							
-							
-							
-							<div class="inner" id="main-content">
-								<h1>Blue Armors</h1>
-								<p style="font-weight: bold;">
-									Blue Armors is a leading cybersecurity firm specializing in comprehensive security solutions and expert consulting services. We are a team of seasoned cybersecurity professionals dedicated to protecting organizations from evolving cyber threats through proactive security measures, strategic assessments, and cutting-edge defensive technologies.
-								</p>
-								<p style="font-weight: bold;">
-									Our firm offers a wide range of professional cybersecurity services including offensive security assessments, defensive security operations, advisory and assurance services, and specialized training programs. With expertise spanning penetration testing, incident response, threat hunting, security architecture, compliance readiness, and more, we provide tailored solutions to help organizations strengthen their security posture and effectively mitigate risks in today's complex threat landscape.
-								</p>
-							</div>
+				<div class="service-shell">
+					<div class="service-tabs" role="tablist" aria-label="Service categories">
+						<button class="service-tab" role="tab" id="tab-offsec" aria-selected="true" aria-controls="panel-services" data-category="offsec" type="button">Offsec</button>
+						<button class="service-tab" role="tab" id="tab-defsec" aria-selected="false" aria-controls="panel-services" data-category="defsec" type="button">Defsec</button>
+						<button class="service-tab" role="tab" id="tab-training" aria-selected="false" aria-controls="panel-services" data-category="training" type="button">Training</button>
+					</div>
+
+					<div id="panel-services" role="tabpanel" aria-labelledby="tab-offsec">
+						<div class="service-grid" id="service-grid"></div>
+						<div class="service-detail" id="service-detail" hidden>
+							<h3 id="service-detail-title"></h3>
+							<p id="service-detail-body"></p>
+							<button class="service-detail__close" type="button" id="service-detail-close">Close detail</button>
 						</div>
-						<nav>
-							<ul>
-							
-								<li  ><a href="/policy"><pre >Privacy Policy</pre></a></li>
-								<li  ><a href="/terms"><pre > Terms of use </pre></a></li>
-							</ul>
-						</nav>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section--dark" id="products" aria-labelledby="products-title">
+			<div class="section__inner reveal">
+				<header class="section__header">
+					<span class="section__eyebrow">Products</span>
+					<h2 class="section__title" id="products-title">Products</h2>
+				</header>
+				<div class="product-stage">
+					<div class="product-visual" role="img" aria-label="Detection and threat monitoring visual"></div>
+					<div class="product-copy">
+						<h3>Detection Engine</h3>
+						<p>
+							Our advanced detection engine provides cutting-edge threat detection capabilities to identify and respond to security incidents in real-time. This powerful tool leverages machine learning and behavioral analytics to detect anomalies, malicious activities, and potential security threats across your entire infrastructure.
+						</p>
+						<a class="btn btn--primary" href="#contact">Contact Us</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section--paper" id="contact" aria-labelledby="contact-title">
+			<div class="section__inner reveal">
+				<div class="contact-layout">
+					<header class="section__header" style="margin-bottom: 0;">
+						<span class="section__eyebrow">Contact</span>
+						<h2 class="section__title" id="contact-title">Contact Us</h2>
 					</header>
 
-				<!-- Main -->
-					<div id="main">
-
-						<article id="redirect">
-							<!-- <meta http-equiv="refresh" content="1; URL=" /> -->
-						</article>
-
-						<!-- Services -->
-							<article id="services">
-								<h2 class="major">Services</h2>
-								<h3>Offsec Services</h3>
-								<p>Identify weaknesses by simulating real-world attacks</p>
-								<ul>
-									<li>Penetration Testing (Web, Mobile, API, Network, Cloud)</li>
-									<li>Purple Team Exercises (Offense + Defense collaboration)</li>
-									<li>Attack Surface Management (External, Digital Footprint)</li>
-									<li>Social Engineering (Phishing)</li>
-									<li>Wireless Security Testing</li>
-								</ul>
-								
-								<h3>Defsec Services</h3>
-								<p>Detect, respond to, and limit the impact of threats</p>
-								<ul>
-									<li>Incident Response & Digital Forensics (DFIR) Retainer</li>
-									<li>Compromise Assessment</li>
-									<li>Malware Analysis</li>
-									<li>Dark Web & Threat Monitoring</li>
-									<li>Threat Hunting</li>
-									<li>Detection Engineering</li>
-									<li>Log & SIEM Use-Case Development</li>
-									<li>Ransomware Readiness & Response</li>
-									<li>DDoS Assessment & Response</li>
-								</ul>
-								
-								<h3>Training Services</h3>
-								<p>Build internal capability</p>
-								<ul>
-									<li>Blue Team Training (Riyadh only)</li>
-									<li>Red Team Training (Riyadh only)</li>
-									<li>Incident Response Tabletop Exercises</li>
-									<li>Secure Coding Training</li>
-								</ul>
-							</article>
-
-						<!-- Products -->
-							<article id="products">
-								<h2 class="major">Products</h2>
-								<h3>Detection Engine</h3>
-								<p>Our advanced detection engine provides cutting-edge threat detection capabilities to identify and respond to security incidents in real-time.</p>
-							</article>
-
-							<article id="contact">
-								<h2 class="major">Contact Us</h2>
-
-								<form
-									action="https://formspree.io/f/meoenjdr"
-									method="POST"
-									>
-									<label>
-										Name: <input type="text" name="name" required></input>
-									</label>
-									<label>
-										Email: <input type="email" name="_replyto" required ></input>
-									</label>
-									<label>
-										message: <textarea cols="40" rows="5" type="text" name="message" required ></textarea>
-									</label>
-
-					
-									<!-- your other form fields go here -->
-									<button type="submit">Send</button>
-									</form>
-
-							</article>
-
-
-
-
-							
-					</div>
-				<!-- Footer -->
-					<footer id="footer">
-					<ul class="icons">
-									<!-- <li><a href="https://twitter.com/Tigers_Sec_News" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>-->
-									<!-- <li><a href="#" class="icon brands fa-discord"><span class="label">Facebook</span></a></li> -->
-									<!-- <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
-									<!-- <li><a href="https://github.com/SI-RBG/" class="icon brands fa-github"><span class="label">GitHub</span></a></li> -->
-								</ul>
-					<ul style="text-align: left;" class="icons">
-						<li><img style="text-align: left;" src="/images/RGB_logo_small.svg" width="200" height="100">
-						</li>
-						</ul>
-					</footer>
+					<form
+						class="contact-form"
+						action="https://formspree.io/f/meoenjdr"
+						method="POST"
+					>
+						<div class="field">
+							<label for="name">Name</label>
+							<input id="name" type="text" name="name" required autocomplete="name" />
+						</div>
+						<div class="field">
+							<label for="email">Email</label>
+							<input id="email" type="email" name="_replyto" required autocomplete="email" />
+						</div>
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea id="message" name="message" rows="5" required></textarea>
+						</div>
+						<button class="btn btn--solid" type="submit">Send</button>
+					</form>
+				</div>
 			</div>
+		</section>
+	</main>
 
-		<!-- BG -->
-			<div id="bg"></div>
+	<footer class="site-footer">
+		<div class="site-footer__inner">
+			<a href="/" aria-label="Blue Armors home">
+				<img src="images/RGB_logo_horizontal_cut_small.svg" alt="Blue Armors" width="200" height="100" />
+			</a>
+			<ul class="footer-links">
+				<li><a href="/policy">Privacy Policy</a></li>
+				<li><a href="/terms">Terms of use</a></li>
+				<li><a href="#contact">Contact Us</a></li>
+			</ul>
+			<p class="footer-copy">&copy; Blue Armors. All rights reserved.</p>
+		</div>
+	</footer>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script>
-				// Global data storage
-				var servicesData = {};
-				var serviceContent = {};
-				var productContent = {};
-				var defaultContent = '';
-				
-				// Embedded JSON data for file:// protocol compatibility (fallback)
-				// This will be loaded from external file if possible, otherwise uses this embedded data
-				var embeddedServicesData = {
-					"offsec": {
-						"services": [
-							{"id": "penetration-testing", "title": "Penetration Testing", "shortDesc": "Web, Mobile, API, Network, Cloud", "description": "Our comprehensive penetration testing services identify vulnerabilities across your web applications, mobile apps, APIs, network infrastructure, and cloud environments. Our certified ethical hackers simulate real-world attacks to uncover security weaknesses before malicious actors can exploit them, providing detailed reports with actionable remediation recommendations."},
-							{"id": "purple-team", "title": "Purple Team Exercises", "shortDesc": "Offense + Defense collaboration", "description": "Purple team exercises combine offensive and defensive security teams to test and improve your security controls collaboratively. Our exercises ensure that your detection and response capabilities are effective against real attack techniques, fostering better collaboration between security teams and enhancing overall security posture."},
-							{"id": "attack-surface", "title": "Attack Surface Management", "shortDesc": "External, Digital Footprint", "description": "We help you identify and manage your external attack surface and digital footprint. Our service includes continuous monitoring of your internet-facing assets, identification of exposed services, and recommendations to reduce your attack surface and minimize the risk of unauthorized access."},
-							{"id": "social-engineering", "title": "Social Engineering (Phishing)", "shortDesc": "Phishing assessments", "description": "Our social engineering assessments test your organization's human security controls through simulated phishing campaigns and other social engineering techniques. We help identify vulnerabilities in employee awareness and provide training to strengthen your human firewall against social engineering attacks."},
-							{"id": "wireless-security", "title": "Wireless Security Testing", "shortDesc": "Wi-Fi & Bluetooth security", "description": "Our wireless security testing evaluates the security of your Wi-Fi networks, Bluetooth implementations, and other wireless technologies. We identify misconfigurations, weak encryption, and other vulnerabilities that could allow unauthorized access to your network infrastructure."},
-							{"id": "ransomware-readiness", "title": "Ransomware Assessment", "shortDesc": "Assessment & Response", "description": "Our comprehensive ransomware readiness assessment evaluates your organization's ability to prevent, detect, and respond to ransomware attacks. We provide recommendations for backup strategies, network segmentation, and response procedures, and stand ready to assist if an attack occurs."},
-							{"id": "ddos-assessment", "title": "DDoS Assessment", "shortDesc": "Prepare for DDoS attacks", "description": "We help you prepare for and respond to distributed denial-of-service (DDoS) attacks through risk assessments, mitigation strategy development, and incident response planning. Our service includes testing your defenses and providing recommendations to ensure business continuity during attacks."}
-						]
-					},
-					"defsec": {
-						"services": [
-							{"id": "incident-response", "title": "Incident Response", "shortDesc": "Digital Forensics Retainer", "description": "Our DFIR retainer service provides your organization with immediate access to expert incident responders and digital forensics specialists. When a security incident occurs, we're ready to assist with containment, investigation, evidence collection, and recovery to minimize business impact and ensure proper documentation for legal and regulatory requirements."},
-							{"id": "compromise-assessment", "title": "Compromise Assessment", "shortDesc": "Identify security breaches", "description": "A compromise assessment helps determine if your systems have been breached by analyzing indicators of compromise (IOCs), network traffic patterns, and system artifacts. Our experts use advanced techniques to detect persistent threats and provide recommendations to improve your security posture."},
-							{"id": "malware-analysis", "title": "Malware Analysis", "shortDesc": "Deep technical analysis", "description": "Our malware analysis service provides deep technical analysis of malicious software to understand its behavior, capabilities, and impact. We deliver actionable intelligence to help you improve detection capabilities, understand attack vectors, and strengthen your defenses against similar threats."},
-							{"id": "dark-web-monitoring", "title": "Dark Web & Threat Monitoring", "shortDesc": "Threat intelligence services", "description": "We monitor dark web forums, marketplaces, and other underground channels for mentions of your organization, stolen credentials, or planned attacks. Our threat intelligence services provide early warning of potential threats and help you proactively protect against emerging risks."},
-							{"id": "threat-hunting", "title": "Threat Hunting", "shortDesc": "Proactive threat detection", "description": "Our proactive threat hunting services actively search for advanced persistent threats and suspicious activities within your network that may evade traditional security controls. Using hypothesis-driven investigations and advanced analytics, we help you identify and neutralize threats before they cause significant damage."}
-						]
-					},
-					"training": {
-						"services": [
-							{"id": "blue-team-training", "title": "Blue Team Training (Riyadh only)", "shortDesc": "Defensive security (Riyadh only)", "description": "Our Blue Team training programs in Riyadh focus on defensive security operations, including threat detection, incident response, security monitoring, and security operations center (SOC) best practices. We provide hands-on training to help your security team effectively defend against cyber threats."},
-							{"id": "red-team-training", "title": "Red Team Training (Riyadh only)", "shortDesc": "Offensive security (Riyadh only)", "description": "Our Red Team training programs in Riyadh teach offensive security techniques and ethical hacking skills. Participants learn penetration testing methodologies, exploitation techniques, and post-exploitation tactics to understand attacker perspectives and improve defensive strategies."},
-							{"id": "tabletop-exercises", "title": "Incident Response Tabletop Exercises", "shortDesc": "Incident Response training", "description": "Our tabletop exercises simulate security incidents in a controlled environment, allowing your team to practice response procedures without the pressure of a real attack. We facilitate exercises tailored to your organization's specific threats and help identify gaps in your incident response plans."},
-							{"id": "secure-coding", "title": "Secure Coding Training", "shortDesc": "Secure development practices", "description": "Our secure coding training helps developers write secure applications by teaching common vulnerabilities, secure coding practices, and secure software development lifecycle (SDLC) principles. We provide hands-on exercises and real-world examples to build security awareness and skills within your development team."}
-						]
-					},
-					"products": {
-						"items": [
-							{"id": "detection-engine", "title": "Detection Engine", "shortDesc": "Advanced threat detection capabilities", "description": "Our advanced detection engine provides cutting-edge threat detection capabilities to identify and respond to security incidents in real-time. This powerful tool leverages machine learning and behavioral analytics to detect anomalies, malicious activities, and potential security threats across your entire infrastructure."}
-						]
-					}
-				};
+	<script>
+		(function () {
+			var categoryCopy = {
+				offsec: "Identify weaknesses by simulating real-world attacks",
+				defsec: "Detect, respond to, and limit the impact of threats",
+				training: "Build internal capability"
+			};
 
-				// Function to escape HTML
-				function escapeHtml(text) {
-					if (!text) return '';
-					var map = {
-						'&': '&amp;',
-						'<': '&lt;',
-						'>': '&gt;',
-						'"': '&quot;',
-						"'": '&#039;'
-					};
-					return text.replace(/[&<>"']/g, function(m) { return map[m]; });
+			var embeddedServicesData = {
+				offsec: {
+					services: [
+						{ id: "penetration-testing", title: "Penetration Testing", shortDesc: "Web, Mobile, API, Network, Cloud", description: "Our comprehensive penetration testing services identify vulnerabilities across your web applications, mobile apps, APIs, network infrastructure, and cloud environments. Our certified ethical hackers simulate real-world attacks to uncover security weaknesses before malicious actors can exploit them, providing detailed reports with actionable remediation recommendations." },
+						{ id: "purple-team", title: "Purple Team Exercises", shortDesc: "Offense + Defense collaboration", description: "Purple team exercises combine offensive and defensive security teams to test and improve your security controls collaboratively. Our exercises ensure that your detection and response capabilities are effective against real attack techniques, fostering better collaboration between security teams and enhancing overall security posture." },
+						{ id: "attack-surface", title: "Attack Surface Management", shortDesc: "External, Digital Footprint", description: "We help you identify and manage your external attack surface and digital footprint. Our service includes continuous monitoring of your internet-facing assets, identification of exposed services, and recommendations to reduce your attack surface and minimize the risk of unauthorized access." },
+						{ id: "social-engineering", title: "Social Engineering (Phishing)", shortDesc: "Phishing assessments", description: "Our social engineering assessments test your organization's human security controls through simulated phishing campaigns and other social engineering techniques. We help identify vulnerabilities in employee awareness and provide training to strengthen your human firewall against social engineering attacks." },
+						{ id: "wireless-security", title: "Wireless Security Testing", shortDesc: "Wi-Fi & Bluetooth security", description: "Our wireless security testing evaluates the security of your Wi-Fi networks, Bluetooth implementations, and other wireless technologies. We identify misconfigurations, weak encryption, and other vulnerabilities that could allow unauthorized access to your network infrastructure." },
+						{ id: "ransomware-readiness", title: "Ransomware Assessment", shortDesc: "Assessment & Response", description: "Our comprehensive ransomware readiness assessment evaluates your organization's ability to prevent, detect, and respond to ransomware attacks. We provide recommendations for backup strategies, network segmentation, and response procedures, and stand ready to assist if an attack occurs." },
+						{ id: "ddos-assessment", title: "DDoS Assessment", shortDesc: "Prepare for DDoS attacks", description: "We help you prepare for and respond to distributed denial-of-service (DDoS) attacks through risk assessments, mitigation strategy development, and incident response planning. Our service includes testing your defenses and providing recommendations to ensure business continuity during attacks." }
+					]
+				},
+				defsec: {
+					services: [
+						{ id: "incident-response", title: "Incident Response", shortDesc: "Digital Forensics Retainer", description: "Our DFIR retainer service provides your organization with immediate access to expert incident responders and digital forensics specialists. When a security incident occurs, we're ready to assist with containment, investigation, evidence collection, and recovery to minimize business impact and ensure proper documentation for legal and regulatory requirements." },
+						{ id: "compromise-assessment", title: "Compromise Assessment", shortDesc: "Identify security breaches", description: "A compromise assessment helps determine if your systems have been breached by analyzing indicators of compromise (IOCs), network traffic patterns, and system artifacts. Our experts use advanced techniques to detect persistent threats and provide recommendations to improve your security posture." },
+						{ id: "malware-analysis", title: "Malware Analysis", shortDesc: "Deep technical analysis", description: "Our malware analysis service provides deep technical analysis of malicious software to understand its behavior, capabilities, and impact. We deliver actionable intelligence to help you improve detection capabilities, understand attack vectors, and strengthen your defenses against similar threats." },
+						{ id: "dark-web-monitoring", title: "Dark Web & Threat Monitoring", shortDesc: "Threat intelligence services", description: "We monitor dark web forums, marketplaces, and other underground channels for mentions of your organization, stolen credentials, or planned attacks. Our threat intelligence services provide early warning of potential threats and help you proactively protect against emerging risks." },
+						{ id: "threat-hunting", title: "Threat Hunting", shortDesc: "Proactive threat detection", description: "Our proactive threat hunting services actively search for advanced persistent threats and suspicious activities within your network that may evade traditional security controls. Using hypothesis-driven investigations and advanced analytics, we help you identify and neutralize threats before they cause significant damage." }
+					]
+				},
+				training: {
+					services: [
+						{ id: "blue-team-training", title: "Blue Team Training (Riyadh only)", shortDesc: "Defensive security (Riyadh only)", description: "Our Blue Team training programs in Riyadh focus on defensive security operations, including threat detection, incident response, security monitoring, and security operations center (SOC) best practices. We provide hands-on training to help your security team effectively defend against cyber threats." },
+						{ id: "red-team-training", title: "Red Team Training (Riyadh only)", shortDesc: "Offensive security (Riyadh only)", description: "Our Red Team training programs in Riyadh teach offensive security techniques and ethical hacking skills. Participants learn penetration testing methodologies, exploitation techniques, and post-exploitation tactics to understand attacker perspectives and improve defensive strategies." },
+						{ id: "tabletop-exercises", title: "Incident Response Tabletop Exercises", shortDesc: "Incident Response training", description: "Our tabletop exercises simulate security incidents in a controlled environment, allowing your team to practice response procedures without the pressure of a real attack. We facilitate exercises tailored to your organization's specific threats and help identify gaps in your incident response plans." },
+						{ id: "secure-coding", title: "Secure Coding Training", shortDesc: "Secure development practices", description: "Our secure coding training helps developers write secure applications by teaching common vulnerabilities, secure coding practices, and secure software development lifecycle (SDLC) principles. We provide hands-on exercises and real-world examples to build security awareness and skills within your development team." }
+					]
+				},
+				products: {
+					items: [
+						{ id: "detection-engine", title: "Detection Engine", shortDesc: "Advanced threat detection capabilities", description: "Our advanced detection engine provides cutting-edge threat detection capabilities to identify and respond to security incidents in real-time. This powerful tool leverages machine learning and behavioral analytics to detect anomalies, malicious activities, and potential security threats across your entire infrastructure." }
+					]
 				}
+			};
 
+			var servicesData = embeddedServicesData;
+			var activeCategory = "offsec";
+			var gridEl = document.getElementById("service-grid");
+			var detailEl = document.getElementById("service-detail");
+			var detailTitle = document.getElementById("service-detail-title");
+			var detailBody = document.getElementById("service-detail-body");
+			var introEl = document.getElementById("services-intro");
+			var panel = document.getElementById("panel-services");
+			var nav = document.getElementById("site-nav");
+			var toggle = document.querySelector(".nav-toggle");
+			var navLinks = document.getElementById("primary-nav");
 
-				// Function to render services grid
-				function renderServicesGrid(services) {
-					if (!services || services.length === 0) {
-						console.error('No services provided to renderServicesGrid');
-						return '<div>No services available</div>';
-					}
-					var gridHtml = '<div class="services-grid">';
-					services.forEach(function(service) {
-						gridHtml += '<div class="service-card" data-service="' + escapeHtml(service.id) + '">';
-						gridHtml += '<h3>' + escapeHtml(service.title) + '</h3>';
-						gridHtml += '<p>' + escapeHtml(service.shortDesc) + '</p>';
-						gridHtml += '</div>';
-					});
-					gridHtml += '</div>';
-					return gridHtml;
-				}
+			function escapeHtml(text) {
+				return String(text || "")
+					.replace(/&/g, "&amp;")
+					.replace(/</g, "&lt;")
+					.replace(/>/g, "&gt;")
+					.replace(/"/g, "&quot;")
+					.replace(/'/g, "&#039;");
+			}
 
-				// Function to render products grid
-				function renderProductsGrid(products) {
-					if (!products || products.length === 0) {
-						console.error('No products provided to renderProductsGrid');
-						return '<div>No products available</div>';
-					}
-					var gridHtml = '<div class="services-grid">';
-					products.forEach(function(product) {
-						gridHtml += '<div class="service-card" data-product="' + escapeHtml(product.id) + '">';
-						gridHtml += '<h3>' + escapeHtml(product.title) + '</h3>';
-						gridHtml += '<p>' + escapeHtml(product.shortDesc) + '</p>';
-						gridHtml += '</div>';
-					});
-					gridHtml += '</div>';
-					return gridHtml;
-				}
+			function setCategory(category, options) {
+				options = options || {};
+				if (!servicesData[category] || !servicesData[category].services) return;
+				activeCategory = category;
 
-				// Function to update content with smooth transition
-				function updateContentWithTransition(newContent) {
-					var $content = $('#main-content');
-					$content.addClass('fade-out');
-					
-					setTimeout(function() {
-						$content.html(newContent);
-						$content.removeClass('fade-out').addClass('fade-in');
-						
-						setTimeout(function() {
-							$content.removeClass('fade-in');
-						}, 250);
-					}, 100);
-				}
-
-				// Function to setup button handlers after data is loaded
-				function setupButtonHandlers() {
-					console.log('Setting up button handlers...');
-					console.log('Services data available:', servicesData);
-					
-					// Handle Offsec button click
-					$('#offsec-btn').off('click').on('click', function(e) {
-						e.preventDefault();
-						e.stopPropagation();
-						e.stopImmediatePropagation();
-						console.log('Offsec button clicked');
-						console.log('Services data:', servicesData);
-						console.log('Offsec data:', servicesData.offsec);
-						if (servicesData.offsec && servicesData.offsec.services) {
-							console.log('Rendering offsec grid with', servicesData.offsec.services.length, 'services');
-							var grid = renderServicesGrid(servicesData.offsec.services);
-							console.log('Grid HTML:', grid.substring(0, 200));
-							updateContentWithTransition(grid);
-						} else {
-							console.error('Offsec data not available. servicesData:', servicesData);
-						}
-						return false;
-					});
-
-					// Handle Defsec button click
-					$('#defsec-btn').off('click').on('click', function(e) {
-						e.preventDefault();
-						e.stopPropagation();
-						e.stopImmediatePropagation();
-						console.log('Defsec button clicked', servicesData.defsec);
-						if (servicesData.defsec && servicesData.defsec.services) {
-							updateContentWithTransition(renderServicesGrid(servicesData.defsec.services));
-						} else {
-							console.error('Defsec data not available');
-						}
-						return false;
-					});
-
-					// Handle Training button click
-					$('#training-btn').off('click').on('click', function(e) {
-						e.preventDefault();
-						e.stopPropagation();
-						e.stopImmediatePropagation();
-						console.log('Training button clicked', servicesData.training);
-						if (servicesData.training && servicesData.training.services) {
-							updateContentWithTransition(renderServicesGrid(servicesData.training.services));
-						} else {
-							console.error('Training data not available');
-						}
-						return false;
-					});
-
-					// Handle Products button click
-					$('#products-btn').off('click').on('click', function(e) {
-						e.preventDefault();
-						e.stopPropagation();
-						e.stopImmediatePropagation();
-						console.log('Products button clicked', servicesData.products);
-						if (servicesData.products && servicesData.products.items) {
-							updateContentWithTransition(renderProductsGrid(servicesData.products.items));
-						} else {
-							console.error('Products data not available');
-						}
-						return false;
-					});
-
-					// Restore default content when clicking Home Page
-					$('nav a[href="/"]').off('click').on('click', function(e) {
-						e.preventDefault();
-						updateContentWithTransition(defaultContent);
-					});
-					
-					console.log('Button handlers set up');
-				}
-
-				// Load data from JSON file and initialize everything
-				$(document).ready(function() {
-					console.log('Document ready, starting initialization...');
-					
-					// Store default content
-					defaultContent = $('#main-content').html();
-					console.log('Default content stored');
-
-					// Load JSON data - handle both file:// and http:// protocols
-					var jsonPath = 'data/services.json';
-					var dataLoaded = false;
-					
-					console.log('Attempting to load JSON from:', jsonPath);
-					console.log('Protocol:', window.location.protocol);
-					console.log('Current location:', window.location.href);
-					
-					// For file:// protocol, try synchronous XMLHttpRequest (sometimes works)
-					if (window.location.protocol === 'file:') {
-						try {
-							var xhr = new XMLHttpRequest();
-							var filePath = jsonPath;
-							// Try to construct full path
-							var currentFile = window.location.pathname;
-							var currentDir = currentFile.substring(0, currentFile.lastIndexOf('/') + 1);
-							filePath = currentDir + jsonPath;
-							
-							console.log('Trying synchronous XHR with path:', filePath);
-							xhr.open('GET', filePath, false); // synchronous
-							xhr.overrideMimeType('application/json');
-							xhr.send(null);
-							
-							if (xhr.readyState === 4 && (xhr.status === 0 || xhr.status === 200)) {
-								var data = JSON.parse(xhr.responseText);
-								console.log('✓ JSON data loaded via synchronous XHR');
-								dataLoaded = true;
-								processLoadedData(data);
-							} else {
-								console.warn('Synchronous XHR failed. Status:', xhr.status, 'ReadyState:', xhr.readyState);
-							}
-						} catch(e) {
-							console.warn('Synchronous XHR exception:', e);
-						}
-					}
-					
-					// If file:// method failed or for http:// protocol, use async methods
-					if (!dataLoaded) {
-						$.ajax({
-							url: jsonPath,
-							dataType: 'json',
-							cache: false,
-							success: function(data) {
-								console.log('✓ JSON data loaded via jQuery AJAX');
-								processLoadedData(data);
-							},
-							error: function(jqxhr, textStatus, error) {
-								// Try fetch as fallback
-								console.warn('jQuery AJAX failed, trying fetch:', textStatus, error);
-								fetch(jsonPath)
-									.then(function(response) {
-										if (!response.ok) {
-											throw new Error('HTTP error! status: ' + response.status);
-										}
-										return response.json();
-									})
-									.then(function(data) {
-										console.log('✓ JSON data loaded via fetch');
-										processLoadedData(data);
-									})
-									.catch(function(fetchError) {
-										console.error('✗ All async methods failed, using embedded data');
-										console.error('  jQuery Status:', textStatus);
-										console.error('  Fetch Error:', fetchError);
-										// Use embedded data as fallback
-										if (typeof embeddedServicesData !== 'undefined') {
-											console.log('✓ Using embedded services data (file:// fallback)');
-											processLoadedData(embeddedServicesData);
-										} else {
-											alert('Failed to load services data. Please ensure data/services.json exists or use a local web server.');
-										}
-									});
-							}
-						});
-					}
-					
-					// If all methods fail for file://, use embedded data
-					if (!dataLoaded && window.location.protocol === 'file:') {
-						setTimeout(function() {
-							if (!dataLoaded && typeof embeddedServicesData !== 'undefined') {
-								console.log('✓ Fallback: Using embedded services data for file:// protocol');
-								processLoadedData(embeddedServicesData);
-							}
-						}, 500);
-					}
-					
-					// Function to process loaded data
-					function processLoadedData(data) {
-						console.log('Data structure:', {
-							hasOffsec: !!data.offsec,
-							hasDefsec: !!data.defsec,
-							hasTraining: !!data.training,
-							hasProducts: !!data.products
-						});
-						servicesData = data;
-						
-						// Build service content lookup object
-						['offsec', 'defsec', 'training'].forEach(function(category) {
-							if (data[category] && data[category].services) {
-								console.log('✓ Processing', category + ':', data[category].services.length, 'services');
-								data[category].services.forEach(function(service) {
-									serviceContent[service.id] = {
-										title: service.title,
-										description: service.description
-									};
-								});
-							} else {
-								console.warn('⚠ Category', category, 'missing or invalid');
-							}
-						});
-						
-						// Build product content lookup object
-						if (data.products && data.products.items) {
-							console.log('✓ Processing products:', data.products.items.length, 'items');
-							data.products.items.forEach(function(product) {
-								productContent[product.id] = {
-									title: product.title,
-									description: product.description
-								};
-							});
-						} else {
-							console.warn('⚠ Products missing or invalid');
-						}
-						
-						console.log('✓ Service content:', Object.keys(serviceContent).length, 'services');
-						console.log('✓ Product content:', Object.keys(productContent).length, 'products');
-						
-						// Setup button handlers after data is loaded
-						setupButtonHandlers();
-						
-						// Test that buttons exist
-						console.log('Button elements found:', {
-							offsec: $('#offsec-btn').length,
-							defsec: $('#defsec-btn').length,
-							training: $('#training-btn').length,
-							products: $('#products-btn').length
-						});
-						
-						console.log('✓ Initialization complete - buttons should work now');
-					}
+				document.querySelectorAll(".service-tab").forEach(function (tab) {
+					var selected = tab.getAttribute("data-category") === category;
+					tab.setAttribute("aria-selected", selected ? "true" : "false");
 				});
 
-				// Event delegation for dynamically created elements (set up once)
-				$(document).ready(function() {
-					// Handle service card clicks (from grid)
-					$(document).on('click', '.service-card[data-service]', function(e) {
-						var serviceId = $(this).data('service');
-						var service = serviceContent[serviceId];
-						
-						if (service) {
-							var newContent = '<div class="content-detail"><h1>' + service.title + '</h1><p style="font-weight: bold;">' + service.description + '</p></div>';
-							updateContentWithTransition(newContent);
-						}
-					});
+				if (panel) {
+					panel.setAttribute("aria-labelledby", "tab-" + category);
+				}
 
-					// Handle product card clicks (from grid)
-					$(document).on('click', '.service-card[data-product]', function(e) {
-						var productId = $(this).data('product');
-						var product = productContent[productId];
-						
-						if (product) {
-							var newContent = '<div class="content-detail"><h1>' + product.title + '</h1><p style="font-weight: bold;">' + product.description + '</p></div>';
-							updateContentWithTransition(newContent);
-						}
-					});
+				var copy = categoryCopy[category] || "";
+				if (introEl) introEl.textContent = copy;
 
-					// Handle service link clicks (from dropdown) - using event delegation
-					$(document).on('click', '.service-link', function(e) {
-						e.preventDefault();
-						e.stopPropagation();
-						
-						var serviceId = $(this).data('service');
-						var service = serviceContent[serviceId];
-						
-						if (service) {
-							var newContent = '<div class="content-detail"><h1>' + service.title + '</h1><p style="font-weight: bold;">' + service.description + '</p></div>';
-							updateContentWithTransition(newContent);
-						}
-					});
+				var services = servicesData[category].services;
+				gridEl.innerHTML = services.map(function (service) {
+					return (
+						'<button class="service-item" type="button" data-service="' + escapeHtml(service.id) + '">' +
+							"<h3>" + escapeHtml(service.title) + "</h3>" +
+							"<p>" + escapeHtml(service.shortDesc) + "</p>" +
+						"</button>"
+					);
+				}).join("");
+
+				hideDetail();
+
+				if (options.scroll) {
+					document.getElementById("services").scrollIntoView({ behavior: "smooth", block: "start" });
+				}
+			}
+
+			function findService(id) {
+				var categories = ["offsec", "defsec", "training"];
+				for (var i = 0; i < categories.length; i++) {
+					var list = (servicesData[categories[i]] && servicesData[categories[i]].services) || [];
+					for (var j = 0; j < list.length; j++) {
+						if (list[j].id === id) return list[j];
+					}
+				}
+				return null;
+			}
+
+			function showDetail(service) {
+				if (!service) return;
+				detailTitle.textContent = service.title;
+				detailBody.textContent = service.description;
+				detailEl.hidden = false;
+				document.querySelectorAll(".service-item").forEach(function (item) {
+					item.classList.toggle("is-active", item.getAttribute("data-service") === service.id);
 				});
-			</script>
+				detailEl.scrollIntoView({ behavior: "smooth", block: "nearest" });
+			}
 
-	</body>
+			function hideDetail() {
+				detailEl.hidden = true;
+				document.querySelectorAll(".service-item").forEach(function (item) {
+					item.classList.remove("is-active");
+				});
+			}
+
+			gridEl.addEventListener("click", function (event) {
+				var button = event.target.closest(".service-item");
+				if (!button) return;
+				showDetail(findService(button.getAttribute("data-service")));
+			});
+
+			document.getElementById("service-detail-close").addEventListener("click", hideDetail);
+
+			document.querySelectorAll(".service-tab").forEach(function (tab) {
+				tab.addEventListener("click", function () {
+					setCategory(tab.getAttribute("data-category"));
+				});
+			});
+
+			document.querySelectorAll(".nav-links a[data-category]").forEach(function (link) {
+				link.addEventListener("click", function () {
+					setCategory(link.getAttribute("data-category"), { scroll: true });
+					closeMobileNav();
+				});
+			});
+
+			function closeMobileNav() {
+				navLinks.classList.remove("is-open");
+				toggle.setAttribute("aria-expanded", "false");
+				toggle.setAttribute("aria-label", "Open menu");
+			}
+
+			toggle.addEventListener("click", function () {
+				var open = !navLinks.classList.contains("is-open");
+				navLinks.classList.toggle("is-open", open);
+				toggle.setAttribute("aria-expanded", open ? "true" : "false");
+				toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+			});
+
+			navLinks.querySelectorAll("a").forEach(function (link) {
+				link.addEventListener("click", function () {
+					if (!link.hasAttribute("data-category")) closeMobileNav();
+				});
+			});
+
+			function onScroll() {
+				nav.classList.toggle("is-scrolled", window.scrollY > 24);
+			}
+
+			window.addEventListener("scroll", onScroll, { passive: true });
+			onScroll();
+
+			if ("IntersectionObserver" in window) {
+				var revealObserver = new IntersectionObserver(function (entries) {
+					entries.forEach(function (entry) {
+						if (entry.isIntersecting) {
+							entry.target.classList.add("is-visible");
+							revealObserver.unobserve(entry.target);
+						}
+					});
+				}, { threshold: 0.12 });
+
+				document.querySelectorAll(".reveal").forEach(function (el) {
+					revealObserver.observe(el);
+				});
+
+				var sectionObserver = new IntersectionObserver(function (entries) {
+					entries.forEach(function (entry) {
+						if (!entry.isIntersecting) return;
+						var id = entry.target.id;
+						document.querySelectorAll(".nav-links a").forEach(function (link) {
+							var href = link.getAttribute("href") || "";
+							link.classList.toggle("is-active", href === "#" + id);
+						});
+					});
+				}, { rootMargin: "-40% 0px -50% 0px", threshold: 0 });
+
+				["home", "about", "services", "products", "contact"].forEach(function (id) {
+					var el = document.getElementById(id);
+					if (el) sectionObserver.observe(el);
+				});
+			} else {
+				document.querySelectorAll(".reveal").forEach(function (el) {
+					el.classList.add("is-visible");
+				});
+			}
+
+			function processLoadedData(data) {
+				servicesData = data || embeddedServicesData;
+				setCategory(activeCategory);
+			}
+
+			fetch("data/services.json")
+				.then(function (response) {
+					if (!response.ok) throw new Error("Failed to load services");
+					return response.json();
+				})
+				.then(processLoadedData)
+				.catch(function () {
+					processLoadedData(embeddedServicesData);
+				});
+		})();
+	</script>
+</body>
 </html>
