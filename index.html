@@ -7,7 +7,7 @@
 	<meta name="description" content="Blue Armors is a leading cybersecurity firm specializing in comprehensive security solutions and expert consulting services." />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
 	<link rel="stylesheet" href="assets/css/site.css" />
 </head>
 <body>
@@ -35,10 +35,29 @@
 
 	<main id="main">
 		<section class="hero" id="home" aria-label="Blue Armors">
-			<div class="hero__media" role="img" aria-label="Blue Armors visual identity"></div>
-			<div class="hero__grain"></div>
+			<div class="hero__grid" aria-hidden="true"></div>
+			<div class="hero__mesh" aria-hidden="true"></div>
+			<div class="hero__nodes" aria-hidden="true">
+				<span class="hero__node hero__node--r"></span>
+				<span class="hero__node"></span>
+				<span class="hero__node hero__node--p"></span>
+				<span class="hero__node"></span>
+			</div>
+			<div class="hero__armor" aria-hidden="true">
+				<div class="hero__armor-frame"></div>
+				<div class="hero__armor-bars">
+					<span></span><span></span><span></span><span></span><span></span>
+				</div>
+			</div>
 			<div class="hero__content">
-				<h1 class="hero__brand">Blue Armors</h1>
+				<p class="hero__signal">
+					<span class="hero__signal-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+					Security posture ascending
+				</p>
+				<div class="hero__identity">
+					<img class="hero__logo" src="images/RGB_logo_small.svg" alt="" width="72" height="105" />
+					<h1 class="hero__brand">Blue Armors</h1>
+				</div>
 				<p class="hero__lede">
 					Blue Armors is a leading cybersecurity firm specializing in comprehensive security solutions and expert consulting services.
 				</p>
@@ -49,19 +68,50 @@
 			</div>
 		</section>
 
-		<section class="section section--paper" id="about" aria-labelledby="about-title">
+		<div class="bar-divider" aria-hidden="true">
+			<span></span><span></span><span></span><span></span><span></span>
+		</div>
+
+		<section class="section section--surface" id="about" aria-labelledby="about-title">
 			<div class="section__inner reveal">
 				<header class="section__header">
 					<span class="section__eyebrow">About</span>
-					<h2 class="section__title" id="about-title">Blue Armors</h2>
+					<h2 class="section__title" id="about-title">Digital armor for modern operations</h2>
 				</header>
-				<div class="about-copy">
-					<p>
-						Blue Armors is a leading cybersecurity firm specializing in comprehensive security solutions and expert consulting services. We are a team of seasoned cybersecurity professionals dedicated to protecting organizations from evolving cyber threats through proactive security measures, strategic assessments, and cutting-edge defensive technologies.
-					</p>
-					<p>
-						Our firm offers a wide range of professional cybersecurity services including offensive security assessments, defensive security operations, advisory and assurance services, and specialized training programs. With expertise spanning penetration testing, incident response, threat hunting, security architecture, compliance readiness, and more, we provide tailored solutions to help organizations strengthen their security posture and effectively mitigate risks in today's complex threat landscape.
-					</p>
+				<div class="about-layout">
+					<div class="about-copy">
+						<p>
+							Blue Armors is a leading cybersecurity firm specializing in comprehensive security solutions and expert consulting services. We are a team of seasoned cybersecurity professionals dedicated to protecting organizations from evolving cyber threats through proactive security measures, strategic assessments, and cutting-edge defensive technologies.
+						</p>
+						<p>
+							Our firm offers a wide range of professional cybersecurity services including offensive security assessments, defensive security operations, advisory and assurance services, and specialized training programs. With expertise spanning penetration testing, incident response, threat hunting, security architecture, compliance readiness, and more, we provide tailored solutions to help organizations strengthen their security posture and effectively mitigate risks in today's complex threat landscape.
+						</p>
+					</div>
+					<aside class="about-visual" aria-label="Layered defense illustration">
+						<p class="about-visual__label">Layered defense stack</p>
+						<div class="about-layers">
+							<div class="about-layer">
+								<span class="about-layer__bars" aria-hidden="true"><i style="height:40%"></i><i style="height:60%"></i><i style="height:85%"></i></span>
+								<span>Offense &amp; risk discovery</span>
+								<span>RED</span>
+							</div>
+							<div class="about-layer">
+								<span class="about-layer__bars" aria-hidden="true"><i style="height:45%"></i><i style="height:70%"></i><i style="height:95%"></i></span>
+								<span>Intelligence &amp; correlation</span>
+								<span>PURPLE</span>
+							</div>
+							<div class="about-layer">
+								<span class="about-layer__bars" aria-hidden="true"><i style="height:50%"></i><i style="height:75%"></i><i style="height:100%"></i></span>
+								<span>Defense &amp; SOC resilience</span>
+								<span>BLUE</span>
+							</div>
+							<div class="about-layer">
+								<span class="about-layer__bars" aria-hidden="true"><i style="height:55%"></i><i style="height:80%"></i><i style="height:100%"></i></span>
+								<span>Infrastructure posture</span>
+								<span>SCALE</span>
+							</div>
+						</div>
+					</aside>
 				</div>
 			</div>
 		</section>
@@ -93,32 +143,53 @@
 			</div>
 		</section>
 
-		<section class="section section--dark" id="products" aria-labelledby="products-title">
+		<section class="section section--product" id="products" aria-labelledby="products-title">
 			<div class="section__inner reveal">
 				<header class="section__header">
 					<span class="section__eyebrow">Products</span>
 					<h2 class="section__title" id="products-title">Products</h2>
 				</header>
 				<div class="product-stage">
-					<div class="product-visual" role="img" aria-label="Detection and threat monitoring visual"></div>
+					<div class="product-visual" role="img" aria-label="Detection and threat monitoring visual">
+						<div class="product-visual__grid" aria-hidden="true"></div>
+						<div class="product-visual__radar" aria-hidden="true"></div>
+						<p class="product-visual__badge">Live telemetry</p>
+						<div class="product-visual__bars" aria-hidden="true">
+							<span></span><span></span><span></span><span></span>
+							<span></span><span></span><span></span><span></span>
+						</div>
+					</div>
 					<div class="product-copy">
 						<h3>Detection Engine</h3>
 						<p>
 							Our advanced detection engine provides cutting-edge threat detection capabilities to identify and respond to security incidents in real-time. This powerful tool leverages machine learning and behavioral analytics to detect anomalies, malicious activities, and potential security threats across your entire infrastructure.
 						</p>
+						<div class="product-meta" aria-hidden="true">
+							<span>Threat signal</span>
+							<span>Defense path</span>
+							<span>Intel correlate</span>
+						</div>
 						<a class="btn btn--primary" href="#contact">Contact Us</a>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="section section--paper" id="contact" aria-labelledby="contact-title">
+		<section class="section section--surface" id="contact" aria-labelledby="contact-title">
 			<div class="section__inner reveal">
 				<div class="contact-layout">
-					<header class="section__header" style="margin-bottom: 0;">
-						<span class="section__eyebrow">Contact</span>
-						<h2 class="section__title" id="contact-title">Contact Us</h2>
-					</header>
+					<div class="contact-aside">
+						<header class="section__header" style="margin-bottom: 0;">
+							<span class="section__eyebrow">Contact</span>
+							<h2 class="section__title" id="contact-title">Contact Us</h2>
+						</header>
+						<p>
+							Engage our team for assessments, defensive operations, or capability building. We respond with precision and operational clarity.
+						</p>
+						<div class="rise-bars rise-bars--sm" aria-hidden="true">
+							<span></span><span></span><span></span><span></span><span></span><span></span>
+						</div>
+					</div>
 
 					<form
 						class="contact-form"
